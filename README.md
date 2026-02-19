@@ -1,18 +1,16 @@
-# React + Vite
+<h1>🔐 React Password Generator</h1>
+A highly efficient and responsive password generator built with React and Tailwind CSS. This project was developed as part of a learning journey inspired by the Chai aur Code YouTube series to master React Hooks and logic-building. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>🚀 Features</h2>
+Customizable Length: Adjust password length (8–20 characters) using a range slider.
+Dynamic Options: Toggle inclusion of Numbers and Special Characters (e.g., !@#$%^&*?).
+One-Click Copy: Instantly copy the generated password to your clipboard.
+Real-time Updates: Passwords regenerate automatically whenever settings change. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<h2>🛠️ Tech Stack & Concepts</h2>
+This project focuses on the core principles of React:
+useState: Manages the state of the password, length, and character permissions.
+useCallback: Memoizes the passwordGenerator function to prevent unnecessary re-creations on every render, optimizing performance.
+useEffect: Synchronizes the UI by triggering the generator whenever dependencies like length or character toggles change.
+useRef: Used for the "Copy to Clipboard" functionality to provide a better user experience by selecting the input text.
+Tailwind CSS: For a clean, modern, and dark-themed UI.
