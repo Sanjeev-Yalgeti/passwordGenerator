@@ -9,8 +9,10 @@ Real-time Updates: Passwords regenerate automatically whenever settings change.
 
 <h2>🛠️ Tech Stack & Concepts</h2>
 This project focuses on the core principles of React:
-useState: Manages the state of the password, length, and character permissions.
-useCallback: Memoizes the passwordGenerator function to prevent unnecessary re-creations on every render, optimizing performance.
-useEffect: Synchronizes the UI by triggering the generator whenever dependencies like length or character toggles change.
-useRef: Used for the "Copy to Clipboard" functionality to provide a better user experience by selecting the input text.
+<ol>
+  <li>useState: Manages the state of the password, length, and character permissions.</li>
+  <li>useRef: Used for the "Copy to Clipboard" functionality to provide a better user experience by selecting the input text.</li>
+  <li>useCallback: Memoizes the passwordGenerator function to prevent unnecessary re-creations on every render, optimizing performance.</li>
+  <li>useEffect: Synchronizes the UI by triggering the generator whenever dependencies like length or character toggles change.</li>
+</ol>
 Tailwind CSS: For a clean, modern, and dark-themed UI.
